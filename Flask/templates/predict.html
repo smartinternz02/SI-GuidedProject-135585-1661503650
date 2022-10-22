@@ -1,0 +1,83 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jun  8 11:11:52 2022
+
+@author: user
+"""
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-image: url("https://medicomente.com/wp-content/uploads/2021/08/photo_2021-08-11_15-02-26.jpg");
+        background-size: cover;
+        }
+        h3.big
+        {
+        line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 bg-light text-right">
+                <a href="/home" class="btn btn-info btn-lg">Home</a>
+                <a href="/predict" class="btn btn-primary disabled btn-lg">Predict</a>
+            </div>
+        </div>
+
+        <br>
+        <h1><strong>Drug Classification System</strong></h1><br>
+         <h4>
+         <form action="/pred", method="POST">
+            <label for="age">Age</label>
+            <br>
+            <input type="text" placeholder="Age">
+            <br>
+            <label for="sex">Sex</label>
+            <br>
+            <select id="sex" name="sex">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Transgender">Transgender</option>
+            </select>
+            <br>
+            <label for="BP">BP</label>
+            <br>
+            <select id="BP" name="BP">
+                <option value="High">High</option>
+                <option value="Medium">Normal</option>
+                <option value="Low">Low</option>
+              </select>
+            <br>
+            <label for="cholesterol">Cholesterol</label>
+            <br>
+            <select id="Cholesterol" name="Cholesterol">
+              <option value="Normal">Normal</option>
+              <option value="High">High</option>
+              <option value="Low">Low</option>
+            </select>
+            <br>
+            <label for="NatoK">Na_to_K</label>
+            <br>
+            <input type="text" placeholder="Na_to_K">
+            <br>
+            <a href="/submit" class="btn btn-info btn-lg">Submit</a>
+        </form>
+        <br>
+        </h4>
+    </div>              
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
